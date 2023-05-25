@@ -1,0 +1,90 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+        backgroundColor: Colors.teal,
+        body:
+        SafeArea(
+        child: Row(
+        mainAxisSize: MainAxisSize.max,
+        verticalDirection: VerticalDirection.up,
+        children: [
+        Container(
+        child: Text('Hello'),
+    color: Colors.pinkAccent,
+    // width: 500.0,
+    // height: 100.0,
+    padding: EdgeInsets.all(20.0),
+    // margin: EdgeInsets.only(bottom: 20.0),
+
+    ),
+    SizedBox(height: 20),
+    Container(
+    child: Text('Hello'),
+    color: Colors.purple,
+    // width: 500.0,
+    // height: 100.0,
+    padding: EdgeInsets.all(20.0),
+    // margin: EdgeInsets.only(bottom: 20.0),
+
+    ),
+    SizedBox(height: 20),
+    Container(
+    child: Text('Hello'),
+    color: Colors.orange,
+    // width: 500.0,
+    // height: 100.0,
+    padding: EdgeInsets.all(20.0),
+    // margin: EdgeInsets.only(bottom: 20.0),
+
+    ),
+
+
+          // Container(
+          //   child: Text('Hello'),
+          //   color: Colors.blue,
+          //   width: 500.0,
+          //   height: 100.0,
+          //   padding: EdgeInsets.all(20.0),
+          //
+          // )
+        ],
+        )
+        )
+        ),
+    );
+  }
+}
+
+// Container(
+// color: Colors.purple,
+// child: Text('Hello'),
+// height: 100.0,
+// width: 100.0,
+// // margin: EdgeInsets.all(20.0),
+// margin: EdgeInsets.symmetric(horizontal: 150.0, vertical: 150.0),
+// // margin: EdgeInsets.only(left: 100.0 ),
+// padding: EdgeInsets.all(30.0),
+// ),
+
+// SizedBox(height: 20),
+    // Container(
+    //   child: Text('Hello'),
+    //   color: Colors.redAccent,
+    //   width: 500.0,
+    //   height: 100.0,
+    //   padding: EdgeInsets.all(20.0),
+    //   // margin: EdgeInsets.only(bottom: 20.0),
+    //
+    // ),
+    // SizedBox(height: 20),
