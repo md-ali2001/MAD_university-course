@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp3());
+}
+
+class MyApp3 extends StatefulWidget {
+  @override
+  State<MyApp3> createState() => _MyApp3();
+
+
+}
+
+class _MyApp3 extends State<MyApp3> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Rectangles and Squares Layout',
+        home: Scaffold(
+
+          body: Row(
+            children: [
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.red,
+                ),
+              ),
+              Expanded(
+                flex: 6,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.green,
+                    ),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.yellow,
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.red,
+                ),
+              ),
+            ],
+          ),
+        ));
+  }
+}
